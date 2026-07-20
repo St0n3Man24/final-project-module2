@@ -39,7 +39,7 @@ p {
 
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -61,6 +61,7 @@ p {
 .section__title {
   font-size: 48px;
   font-weight: 900;
+  color: rgb(36, 62, 99);
   margin: 20px 0;
   line-height: 1.5;
   letter-spacing: 1.6px;
@@ -426,6 +427,113 @@ p {
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
-  color: #718096; 
+  color: #718096;
 }
 
+/* VALUES */
+
+#values {
+  padding: 0 32px;
+}
+
+.values__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.values__description,
+.values__img {
+  width: 50%;
+}
+
+.values__img {
+  width: 100%;
+  max-width: 650px;
+}
+
+.values__description {
+  padding: 32px 0;
+  padding-right: 64px;
+}
+
+.section__title {
+  margin-bottom: 32px;
+}
+
+.values__list {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  max-width: none;
+}
+
+.value {
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+}
+
+.value__img1--wrapper,
+.value__img2--wrapper {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.value__img {
+  width: 20px;
+  height: 20px;
+}
+
+.value__img1--wrapper {
+  background-color: #9ae6b4;
+}
+
+.value__img2--wrapper {
+  background-color: #feb2b2;
+}
+
+.value__name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #243e63;
+}
+
+.value__para {
+  margin-top: 16px;
+  line-height: 1.75;
+  color: #718096;
+}
+
+.btn {
+  margin-top: 48px;
+}
+
+/* PRICING */
+
+#pricing {
+  padding: 0 32px;
+}
+
+.pricing__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.section__para {
+  max-width: 576px;
+  text-align: center;
+}
