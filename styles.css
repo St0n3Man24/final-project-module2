@@ -548,17 +548,171 @@ p {
 }
 
 .plan {
-  margin-top: 64px;
-  margin-right: 32px;
-  padding: 0 32px;
-  padding-top: 8px;
+  margin-top: 4rem;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 300px;
+  max-width: 24rem;
   text-align: center;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  color: rgb(26, 32, 44);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0,) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan:nth-child(2) {
+  background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__stripe {
+  position: absolute;
+  left:0px;
+  right: 0px;
+  top: 0px;
+  height: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__btn {
+  color: white;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__btn {
+  color: white;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(245, 178, 178) 100%);
+}
+
+.plan:nth-child(odd) .plan__top,
+.plan:nth-child(odd) .plan__middle,
+.plan:nth-child(odd) .plan__bottom {
+  border-left: 1px solid rgb(229, 231, 235);
+  border-right: 1px solid rgb(229, 231, 235);
+}
+
+.plan__top {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.625;
+}
+
+.plan:nth-child(odd) .plan__name,
+.plan:nth-child(odd) .plan__price,
+.plan:nth-child(odd) .plan__target {
+  color: black;
+}
+
+.plan__name,
+.plan__price,
+.plan__duration {
+  font-weight: 700;
+  line-height: 1.625;
+}
+
+.plan:nth-child(odd) .plan__bottom {
+  border-bottom: 1px solid rgb(229, 231, 235);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.plan:nth-child(odd) .plan__feature {
+  color: #718096;
+}
+
+.plan:nth-child(odd) .plan__duration {
+  color: #a0aec0;
+}
+
+.plan:nth-child(odd) .plan__middle {
+  border-top: 2px solid rgb(229, 231, 235);
+  border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__middle {
+  border-top: 2px solid rgb(102, 126, 234);
+  border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+  color: white;
+}
+
+.plan:nth-child(2) .plan__btn {
+  color: #6415ff
+}
+
+.plan__name {
+  font-size: 20px;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 4px 0;
+  letter-spacing: 1.5px;
+}
+
+.plan__duration {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+.plan__middle {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 2rem;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.plan__target {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.plan__feature {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;line-height: 1.5;
+}
+
+.plan__bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.plan__btn {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  width: 100%;
 }
