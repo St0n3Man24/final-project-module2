@@ -539,7 +539,7 @@ p {
   align-items: center;
 }
 
-.section__title {
+#pricing .section__title {
   margin: 16px 0;
   text-align: center;
 }
@@ -857,8 +857,8 @@ p {
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* align-center: horizontally */
+  align-items: center; /* align-center: vitically */
 }
 
 .start__row {
