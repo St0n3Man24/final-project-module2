@@ -500,18 +500,17 @@ p {
 
 .steps__img--wrapper {
   display: flex;
-  align-items: center;
   position: relative;
 }
 
 .steps__img {
-  position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
 .steps__grid {
   position: absolute;
-  top: 123px;
+  top: 220px;
   left: 50%;
   transform: translateX(-50%);
   width: 160px;
