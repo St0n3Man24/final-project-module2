@@ -1275,6 +1275,12 @@ footer {
   .testimonials__description {
     width: calc(100% - 40%);
   }
+
+  .steps__grid {
+    height: 80px;
+    width: 80px;
+    bottom: -50px;
+  }
 }
 
 @media (max-width: 1024px) {
