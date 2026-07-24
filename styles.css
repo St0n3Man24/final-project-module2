@@ -302,7 +302,7 @@ p {
   border-radius: 100px;
   border: 2px solid lightgray;
   padding: 20px 192px 20px 32px;
-  color: rgb(36, 62, 99);
+  color: rgb(48, 74, 110);
   font-size: 16px;
   font-weight: 500;
   position: absolute;
@@ -348,6 +348,9 @@ p {
 
 /* FEATURES */
 
+#features .section__title {
+  text-align: center;
+}
 .row__features {
   display: flex;
   flex-direction: column;
@@ -1415,6 +1418,10 @@ footer {
 
   footer {
     padding: 80px 32px;
+  }
+
+  .value__title {
+    justify-content: center;
   }
 }
 
