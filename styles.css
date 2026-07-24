@@ -179,10 +179,20 @@ p {
 
 .menu__bars {
   width: 32px;
+  height: 32px;
 }
 
 .menu__bars:hover {
-  color: #6415ff;
+  stroke: #6415ff;
+}
+
+.menu__X {
+  width: 20px;
+  height: 20px;
+}
+
+.menu__X:hover {
+  fill: #6415ff;
 }
 
 /* NAVIGATION BAR */
