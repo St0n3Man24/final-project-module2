@@ -177,6 +177,14 @@ p {
   color: white;
 }
 
+.menu__bars {
+  width: 32px;
+}
+
+.menu__bars:hover {
+  color: #6415ff;
+}
+
 /* NAVIGATION BAR */
 
 .nav__row {
